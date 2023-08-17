@@ -1,0 +1,17 @@
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Infra.deps.json
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Infra.pdb
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.AssemblyInfoInputs.cache
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.AssemblyInfo.cs
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.csproj.CoreCompileInputs.cache
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\refint\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.pdb
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\ref\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.csproj.AssemblyReference.cache
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Infra.runtimeconfig.json
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Domain.dll
+C:\Poc\PesquisaSatistacao\src\Infra\bin\Debug\net7.0\Domain.pdb
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.csproj.CopyComplete
+C:\Poc\PesquisaSatistacao\src\Infra\obj\Debug\net7.0\Infra.genruntimeconfig.cache

@@ -1,0 +1,5 @@
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.csproj.AssemblyReference.cache
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.AssemblyInfoInputs.cache
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.AssemblyInfo.cs
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.csproj.CoreCompileInputs.cache

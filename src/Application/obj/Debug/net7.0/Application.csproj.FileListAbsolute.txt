@@ -1,0 +1,17 @@
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Application.deps.json
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Application.dll
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Application.pdb
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Domain.dll
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Domain.pdb
+C:\Poc\PesquisaSatistacao\src\Application\bin\Debug\net7.0\Infra.pdb
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.dll
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\refint\Application.dll
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\Application.pdb
+C:\Poc\PesquisaSatistacao\src\Application\obj\Debug\net7.0\ref\Application.dll
