@@ -12,6 +12,7 @@ namespace Infra.Map
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Criado).HasColumnName("Criado").HasColumnType("datetime");
             builder.Property(x => x.Alterado).HasColumnName("Alterado").HasColumnType("datetime");
+            builder.Property(x => x.UsuarioId).IsRequired(); 
             builder.Property(x => x.Nome).HasMaxLength(200).IsRequired();
             builder.Property(x => x.SatisfacaoNivel).HasMaxLength(15).IsRequired();
         }

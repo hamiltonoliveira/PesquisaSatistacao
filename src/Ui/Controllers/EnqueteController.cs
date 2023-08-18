@@ -67,10 +67,12 @@ namespace SisTarefa.Ui.Controller
             {
                 mensagemView = await _EnqueteService.InsertAsync(enquete); 
 
-                if (!mensagemView.Sucesso)
+                if (mensagemView.Sucesso)
                 {
+                    mensagemView.Mensagem = "Enquete registrada.";
                     return Ok(mensagemView.Mensagem); 
                 }
+
             }
             catch (DbUpdateException ex)
             {

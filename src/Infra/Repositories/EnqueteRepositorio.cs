@@ -1,4 +1,5 @@
 ﻿using Azure;
+using Domain.Dto;
 using Domain.Entities;
 using Infra.Data;
 using Infra.Interfaces;
@@ -42,6 +43,7 @@ namespace Infra.Repositories
             var mensagem = string.Empty; 
             try
             {
+
                 var verificaEnquete = _db.Enquete.SingleOrDefault(x => x.Nome == entity.Nome);
 
                 if (verificaEnquete == null)

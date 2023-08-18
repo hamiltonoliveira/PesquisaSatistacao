@@ -6,6 +6,8 @@ namespace Domain.Entities
 {
     public class Enquete :Base
     {
+        public int UsuarioId { get; set; }
+        public Usuario Usuario { get; set; }
         public string Nome { get;  set; }
         public SatisfacaoNivel SatisfacaoNivel { get;  set; }
      
