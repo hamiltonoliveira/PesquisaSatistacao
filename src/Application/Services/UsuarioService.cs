@@ -1,19 +1,17 @@
-﻿using Domain.Entities;
+﻿using Application.Interfaces;
+using Domain.Entities;
+using Domain.ViewModels;
 using Infra.Interfaces;
+using System.Linq.Expressions;
 
 namespace Application.Services
 {
-    public class UsuarioService : IUsuarioRepositorio
+    public class UsuarioService : IUsuarioService
     {
         private readonly IUsuarioRepositorio _usersRepositorio;
-
         public UsuarioService(IUsuarioRepositorio usersRepositorio)
         {
             _usersRepositorio = usersRepositorio;
-        }
-        public async Task DeleteAsync(int Id)
-        {
-            await _usersRepositorio.DeleteAsync(Id);
         }
 
         public async Task<List<Usuario>> GetAllAsync(int Page, int PageSize)
@@ -31,9 +29,18 @@ namespace Application.Services
             return await _usersRepositorio.GetIdAsync(id);
         }
 
-        public async Task<Usuario> InsertAsync(Usuario entity)
+        public async Task<MensagemView> InsertAsync(Usuario entity)
         {
-            return await _usersRepositorio.InsertAsync(entity);
+            var mensagemView = new MensagemView();
+
+            var retorno = await _usersRepositorio.InsertAsync(entity);
+
+            if (retorno != null)
+            {
+                mensagemView.Sucesso = false;
+                mensagemView.Mensagem = "Usuário cadastrado.";
+            }
+            return mensagemView;
         }
 
         public async Task UpdateAsync(Usuario entity)
@@ -41,7 +48,9 @@ namespace Application.Services
             await _usersRepositorio.UpdateAsync(entity);
         }
 
-       
-       
+        public List<Usuario> Where(Expression<Func<Usuario, bool>> expression)
+        {
+            return  _usersRepositorio.Where(expression).ToList();
+        }
     }
 }

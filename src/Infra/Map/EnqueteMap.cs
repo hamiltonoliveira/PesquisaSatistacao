@@ -8,7 +8,7 @@ namespace Infra.Map
     {
         public void Configure(EntityTypeBuilder<Enquete> builder)
         {
-            builder.ToTable("Usuario");
+            builder.ToTable("Enquete");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Criado).HasColumnName("Criado").HasColumnType("datetime");
             builder.Property(x => x.Alterado).HasColumnName("Alterado").HasColumnType("datetime");

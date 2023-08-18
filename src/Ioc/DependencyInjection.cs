@@ -12,14 +12,16 @@ namespace Ioc
         public static IServiceCollection AddInfraStructure(this IServiceCollection service, IConfiguration Configuration)
         {
             service.AddScoped<IAutenticarRepositorio, AutenticarRepositorio>();
-            service.AddScoped<IUsuarioRepositorio, UsuarioRepository>();
+            service.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            service.AddScoped<IEnqueteRepositorio, EnqueteRepositorio>();
             return service;
         }
 
         public static IServiceCollection AddServices(this IServiceCollection service, IConfiguration Configuration)
         {
             service.AddScoped<IAutenticarService, AutenticarService>();
-            service.AddScoped<UsuarioService, UsuarioService>();
+            service.AddScoped<IUsuarioService, UsuarioService>();
+            service.AddScoped<IEnqueteService, EnqueteService>();
             return service;
         }
     }

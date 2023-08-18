@@ -9,3 +9,4 @@ C:\Poc\PesquisaSatistacao\src\Domain\obj\Debug\net7.0\Domain.dll
 C:\Poc\PesquisaSatistacao\src\Domain\obj\Debug\net7.0\refint\Domain.dll
 C:\Poc\PesquisaSatistacao\src\Domain\obj\Debug\net7.0\Domain.pdb
 C:\Poc\PesquisaSatistacao\src\Domain\obj\Debug\net7.0\ref\Domain.dll
+C:\Poc\PesquisaSatistacao\src\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache

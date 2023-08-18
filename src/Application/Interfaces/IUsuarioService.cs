@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface IUserService : IService<Usuario>
+    public interface IUsuarioService : IService<Usuario>
     {
     }
 }

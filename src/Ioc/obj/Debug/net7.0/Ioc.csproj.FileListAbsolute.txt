@@ -3,3 +3,17 @@ C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.GeneratedMSBuildEditorCon
 C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.AssemblyInfoInputs.cache
 C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.AssemblyInfo.cs
 C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.csproj.CoreCompileInputs.cache
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Ioc.deps.json
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Ioc.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Ioc.pdb
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Application.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Domain.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Infra.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Application.pdb
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Domain.pdb
+C:\Poc\PesquisaSatistacao\src\Ioc\bin\Debug\net7.0\Infra.pdb
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.csproj.CopyComplete
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\refint\Ioc.dll
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\Ioc.pdb
+C:\Poc\PesquisaSatistacao\src\Ioc\obj\Debug\net7.0\ref\Ioc.dll

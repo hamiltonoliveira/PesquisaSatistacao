@@ -1,11 +1,11 @@
-﻿using Domain.Entities;
+﻿using Domain.Dto;
+using Domain.Entities;
 using Domain.Helpers;
 using Infra.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using static Domain.Dto.IAutenticarService;
 
 namespace Infra.Repositories
 {
@@ -70,7 +70,7 @@ namespace Infra.Repositories
                 Subject = new ClaimsIdentity(new[] {
                    new Claim("Guid", guid),
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(5),
+                Expires = DateTime.UtcNow.AddMinutes(15),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);

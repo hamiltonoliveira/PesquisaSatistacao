@@ -1,15 +1,22 @@
-﻿using Domain.Enum;
+﻿using Domain.Dto;
+using Domain.Enum;
+using FluentValidation;
 
 namespace Domain.Entities
 {
     public class Enquete :Base
     {
-        public string Nome { get; private set; }
-        public SatisfacaoNivel SatisfacaoNivel { get; private set; }
-        public Enquete(string nome, SatisfacaoNivel satisfacaoNivel)
+        public string Nome { get;  set; }
+        public SatisfacaoNivel SatisfacaoNivel { get;  set; }
+     
+        public class EnqueteValidation : AbstractValidator<EnqueteDTO>
         {
-            Nome = nome;
-            SatisfacaoNivel = satisfacaoNivel;
+            public EnqueteValidation()
+            {
+                RuleFor(x => x.Nome)
+                    .NotEmpty().WithMessage("O campo Nome é obrigatório.");
+                RuleFor(x => x.SatisfacaoNivel).NotNull().WithMessage("O campo SatisfacaoNivel não pode ser nulo");
+            }
         }
     }
 }

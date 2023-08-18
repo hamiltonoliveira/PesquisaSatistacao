@@ -13,7 +13,7 @@ namespace Infra.Map
             builder.Property(x => x.Criado).HasColumnName("Criado").HasColumnType("datetime");
             builder.Property(x => x.Alterado).HasColumnName("Alterado").HasColumnType("datetime");
             builder.Property(x => x.Email).HasMaxLength(200).IsRequired();
-            builder.Property(x => x.Senha).HasMaxLength(11).IsRequired();
+            builder.Property(x => x.Senha).HasMaxLength(200).IsRequired();
         }
     }
 }

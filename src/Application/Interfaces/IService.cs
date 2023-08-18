@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Domain.ViewModels;
+using System.Linq.Expressions;
 
 namespace Application.Interfaces
 {
@@ -7,9 +8,8 @@ namespace Application.Interfaces
         Task<Tentity> GetIdAsync(int id);
         Task<Tentity> GetGuidAsync(string guid);
         Task<List<Tentity>> GetAllAsync(int Page, int PageSize);
-        Task<Tentity> InsertAsync(Tentity entity);
+        Task<MensagemView> InsertAsync(Tentity entity);
         Task UpdateAsync(Tentity entity);
-        Task DeleteAsync(int Id);
-        Task<List<Tentity>> Where(Expression<Func<Tentity, bool>> expression);
+        List<Tentity> Where(Expression<Func<Tentity, bool>> expression);
     }
 }

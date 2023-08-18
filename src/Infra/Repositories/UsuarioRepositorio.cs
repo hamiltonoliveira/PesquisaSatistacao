@@ -6,10 +6,10 @@ using System.Linq.Expressions;
 
 namespace Infra.Repositories
 {
-    public class UserRepository : IDisposable
+    public class UsuarioRepositorio : IUsuarioRepositorio, IDisposable
     {
         protected readonly DataContext _db;
-        public UserRepository(DataContext db)
+        public UsuarioRepositorio(DataContext db)
         {
             _db = db;
         }
@@ -33,11 +33,8 @@ namespace Infra.Repositories
             return await _db.Usuario.FindAsync(id);
         }
 
-
         public async Task<Usuario> InsertAsync(Usuario entity)
         {
-            try
-            {
                 var verificaUsuario = _db.Usuario.SingleOrDefault(x => x.Email == entity.Email);
 
                 if (verificaUsuario == null)
@@ -45,15 +42,10 @@ namespace Infra.Repositories
                     _db.Usuario.Add(entity);
                     await _db.CommitAsync();
                 }
-                return entity;
-            }
-            finally
-            {
-                //Dispose();
-            }
+
+            return entity;
         }
 
-       
         public async Task UpdateAsync(Usuario entity)
         {
             try
@@ -69,11 +61,10 @@ namespace Infra.Repositories
             finally { Dispose(); }
         }
 
-        public async Task<List<Usuario>> Where(Expression<Func<Usuario, bool>> expression)
+        public IEnumerable<Usuario> Where(Expression<Func<Usuario, bool>> expression)
         {
-            return await _db.Set<Usuario>().Where(expression).ToListAsync();
+            return  _db.Set<Usuario>().Where(expression).ToList();
         }
-
         public void Dispose()
         {
             if (_db != null)
@@ -83,11 +74,5 @@ namespace Infra.Repositories
             GC.SuppressFinalize(this);
         }
 
-
-        public Task DeleteAsync(int Id)
-        {
-            throw new NotImplementedException();
-        }
-       
     }
 }

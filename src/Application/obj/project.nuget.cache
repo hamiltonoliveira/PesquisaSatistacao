@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+W0y0cyrsRbLYL1TREuN3yFwUZJp8JIfIRDyL4r77PbQJWZVJMy8kNUQTL3bJ+xanck9zRsQS8Xdw1M8xh3VNQ==",
+  "dgSpecHash": "KnizkpG+BSlLtBZquhZbrX74V23tBpnXiZLL6If1/41fg0KIPeCBo7or93FtcH/SZpyGmXQet9doKe25h8AuYQ==",
   "success": true,
   "projectFilePath": "C:\\Poc\\PesquisaSatistacao\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\hamil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\hamil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\hamil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\hamil\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
     "C:\\Users\\hamil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hamil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hamil\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oa/uiVG4CFKyyD1s2rJsP05CTI3iV6mLogfrQ31W+M+QFFEdNW+K6F84TUCBYxQkR8P+mTekTideyw8vCfWFOw==",
+  "dgSpecHash": "mlIFLCPiNhw6qbm4MCwUD8upWpTxVWjlQY2tRefuocgraGe9Af9e5zPi8gZh5A8Dz9jSybBbDRUZW0XlYF9A4Q==",
   "success": true,
   "projectFilePath": "C:\\Poc\\PesquisaSatistacao\\src\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hamil\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512"
+  ],
   "logs": []
 }
