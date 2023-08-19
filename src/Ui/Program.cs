@@ -1,8 +1,10 @@
-﻿using Domain.Helpers;
+﻿using Application.Interfaces;
+using Domain.Helpers;
 using Infra.Data;
 using Ioc;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -10,7 +12,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("ConnectionTarefa");
+var connectionString = builder.Configuration.GetConnectionString("ConnectionPesquisa");
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -96,8 +98,9 @@ builder.Services.AddAuthentication(x =>
 
 builder.Services.AddAuthorization(option =>
 {
-    option.AddPolicy(name: "Admin", policy => policy.RequireRole("Cliente"));
+    option.AddPolicy(name: "Admin", policy => policy.RequireRole("Usuario"));
 });
+
 // JWT
 
 var app = builder.Build();

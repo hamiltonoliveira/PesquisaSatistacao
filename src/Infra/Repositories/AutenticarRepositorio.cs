@@ -18,7 +18,7 @@ namespace Infra.Repositories
         }
         public async Task<TokensDTO> GerarToKen(string email)
         {
-            List<Usuario> usuario = _userRepository.Where(x => x.Email == email).ToList();
+            List<Usuario> usuario = _userRepository.Where(x => x.Email == email && x.Ativo == true).ToList();
 
             var _GuidI = string.Empty;
             var _Email = string.Empty;
@@ -29,8 +29,8 @@ namespace Infra.Repositories
                 _GuidI = item.GuidI;
             }
 
-            var _Token = generateJwtToken(_Email, _GuidI);
-            var _TokenRefresh = generateJwtTokenRefresh(_Email, _GuidI);
+            var _Token = generateJwtToken(_Email, _GuidI,"Usuario");
+            var _TokenRefresh = generateJwtTokenRefresh(_Email, _GuidI, "Usuario");
 
             return new TokensDTO()
             {
@@ -39,7 +39,7 @@ namespace Infra.Repositories
             };
         }
 
-        private string generateJwtToken(string email, string guid)
+        private string generateJwtToken(string email, string guid, string Role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             string oculto = CodigoCripto.Cripto();
@@ -50,8 +50,9 @@ namespace Infra.Repositories
                 Subject = new ClaimsIdentity(new[] {
                     new Claim("Email", email),
                     new Claim("Guid", guid),
+                    new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(2),
+                Expires = DateTime.UtcNow.AddMinutes(20),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
@@ -59,7 +60,7 @@ namespace Infra.Repositories
             return tokenHandler.WriteToken(token);
         }
 
-        private string generateJwtTokenRefresh(string guid, string Role)
+        private string generateJwtTokenRefresh(string email, string guid, string Role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             string oculto = CodigoCripto.Cripto();
@@ -68,9 +69,11 @@ namespace Infra.Repositories
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[] {
-                   new Claim("Guid", guid),
+                    new Claim("Email", email),
+                    new Claim("Guid", guid),
+                    new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(15),
+                Expires = DateTime.UtcNow.AddMinutes(30),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);

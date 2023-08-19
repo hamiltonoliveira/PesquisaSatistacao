@@ -14,7 +14,7 @@ using static Domain.Entities.Enquete;
 
 namespace SisTarefa.Ui.Controller
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class EnqueteController : ControllerBase
@@ -32,7 +32,7 @@ namespace SisTarefa.Ui.Controller
             _EnqueteService = EnqueteService;
         }
 
-        [AllowAnonymous]
+        [Authorize(Roles = "Usuario")]
         [HttpPost("Criar")]
         [ProducesResponseType(typeof(EnqueteDTO), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
