@@ -1,6 +1,6 @@
-**Projeto Pesquisa de satisfação - README**
+**Projeto Pesquisa de Satisfação - README**
 
-Bem-vindo ao projeto XYZ! Este é um sistema desenvolvido utilizando a plataforma .NET 7 e a arquitetura em camadas DDD (Domain-Driven Design). O projeto visa oferecer uma estrutura robusta e escalável para a criação de um sistema completo, com foco na organização e manutenção do código.
+Bem-vindo ao projeto Pesquisa de Satisfação! Este é um sistema desenvolvido utilizando a plataforma .NET 7 e a arquitetura em camadas DDD (Domain-Driven Design). O projeto visa oferecer uma estrutura robusta e escalável para a criação de um sistema completo, com foco na organização e manutenção do código.
 
 ## Requisitos
 
@@ -31,20 +31,21 @@ Na camada de serviço, foi implementado um limite de até 20 enquetes diárias p
 
 Todo o processo de interação entre o frontend e o backend foi projetado de forma a retornar mensagens claras e coerentes. Isso garante uma experiência de usuário mais amigável e eficiente.
 
-## Executando o Backend no Docker
+## Executando o Backend com Docker Compose
 
-O backend está pronto para ser executado em um contêiner Docker. Siga os passos abaixo para executá-lo:
+O backend pode ser facilmente executado usando o Docker Compose para gerenciar todos os serviços relacionados. Siga os passos abaixo para executar o sistema:
 
-1. Certifique-se de ter o Docker instalado e em execução.
+1. Certifique-se de ter o Docker e o Docker Compose instalados e em execução.
 2. Navegue até o diretório raiz do projeto.
-3. Abra o terminal e execute o seguinte comando: `docker build -t projetoxyz-backend .`
-4. Após a conclusão do build, execute o contêiner com o seguinte comando: `docker run -p 8080:80 projetoxyz-backend`
+3. Abra o terminal e execute o seguinte comando: `docker-compose up --build`
+
+Isso criará e inicializará todos os contêineres necessários para o sistema, incluindo o backend.
 
 Agora o backend está em execução e pode ser acessado em `http://localhost:8080`.
 
 ## Conclusão
 
-Este README forneceu uma visão geral do projeto XYZ, incluindo a versão do .NET utilizada, a arquitetura em camadas DDD, o processo de criação do banco de dados, os recursos de autenticação e refresh token, o limite diário de enquetes e a disponibilidade do backend em um contêiner Docker. Sinta-se à vontade para explorar o projeto e contribuir para seu desenvolvimento contínuo.
+Este README forneceu uma visão geral do projeto Pesquisa de Satisfação, incluindo a versão do .NET utilizada, a arquitetura em camadas DDD, o processo de criação do banco de dados, os recursos de autenticação e refresh token, o limite diário de enquetes e a disponibilidade do backend em contêineres Docker gerenciados pelo Docker Compose. Sinta-se à vontade para explorar o projeto e contribuir para seu desenvolvimento contínuo.
 
 Caso tenha alguma dúvida ou feedback, não hesite em entrar em contato com nossa equipe.
 
