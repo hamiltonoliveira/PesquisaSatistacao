@@ -22,9 +22,10 @@ namespace Infra.Repositories
 
             var _GuidI = string.Empty;
             var _Email = string.Empty;
-
+            var _usuarioId = 0;
             foreach (var item in usuario)
             {
+                _usuarioId = item.Id;
                 _Email = item.Email;
                 _GuidI = item.GuidI;
             }
@@ -34,6 +35,7 @@ namespace Infra.Repositories
 
             return new TokensDTO()
             {
+                UsuarioId = _usuarioId,
                 Token = _Token,
                 TokenRefresh = _TokenRefresh,
             };
@@ -52,7 +54,7 @@ namespace Infra.Repositories
                     new Claim("Guid", guid),
                     new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(20),
+                Expires = DateTime.UtcNow.AddMinutes(60),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
@@ -73,7 +75,7 @@ namespace Infra.Repositories
                     new Claim("Guid", guid),
                     new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(30),
+                Expires = DateTime.UtcNow.AddMinutes(60),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);

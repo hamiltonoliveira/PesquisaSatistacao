@@ -2,7 +2,8 @@
 {
   public class TokensDTO
         {
-            public string? Token { get; set; }
-            public string? TokenRefresh { get; set; }
+         public int UsuarioId { get; set; }
+         public string? Token { get; set; }
+         public string? TokenRefresh { get; set; }
         }
  }

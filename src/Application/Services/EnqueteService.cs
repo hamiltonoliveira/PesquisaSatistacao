@@ -39,7 +39,7 @@ namespace Application.Services
             {
                 var verificaos20doDia = _EnqueteRepositorio.Where(x => x.Criado.Date == entity.Criado.Date);
 
-                if (verificaos20doDia.Count() >= 2)
+                if (verificaos20doDia.Count() >= 20)
                 {
                     mensagemView.Sucesso = false;
                     mensagemView.Mensagem = "Limite diário de enquetes atingido - 20 alcançado.";

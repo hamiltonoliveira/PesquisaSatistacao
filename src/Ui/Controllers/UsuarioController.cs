@@ -33,6 +33,7 @@ namespace SisTarefa.Ui.Controller
 
         [AllowAnonymous]
         [HttpPost("Criar")]
+        [ProducesResponseType(typeof(UsuarioDTO), 200)]
         [ProducesResponseType(typeof(UsuarioDTO), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
         public async Task<IActionResult> Criar([FromBody] UsuarioDTO usuarioDto)
@@ -70,7 +71,10 @@ namespace SisTarefa.Ui.Controller
                     await _usuarioService.InsertAsync(user);
                     tokens = await _autenticarService.GerarToKen(usuarioDto.Email);
                 }
-
+                else
+                {
+                    return BadRequest("Usuário possue cadastro.");
+                }
             }
             catch (DbUpdateException ex)
             {
