@@ -15,7 +15,7 @@ Certifique-se de que você possui as seguintes ferramentas instaladas em seu amb
 Para criar o banco de dados no SQL Server, siga os passos abaixo:
 
 1. Navegue até a camada `Infra` do projeto.
-2. Abra o terminal e execute o comando: `dotnet ef database update`.
+2. Abra o terminal e execute o comando: `update-database`.
 
 Isso executará as migrações necessárias e criará as tabelas no banco de dados configurado.
 
