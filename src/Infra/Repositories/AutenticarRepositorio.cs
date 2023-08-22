@@ -54,7 +54,7 @@ namespace Infra.Repositories
                     new Claim("Guid", guid),
                     new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(60),
+                Expires = DateTime.UtcNow.AddMonths(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
@@ -75,7 +75,7 @@ namespace Infra.Repositories
                     new Claim("Guid", guid),
                     new Claim(ClaimTypes.Role, Role)
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(60),
+                Expires = DateTime.UtcNow.AddMonths(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
