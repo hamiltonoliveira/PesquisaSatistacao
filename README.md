@@ -43,6 +43,16 @@ Isso criará e inicializará todos os contêineres necessários para o sistema, 
 
 Agora o backend está em execução e pode ser acessado em `http://localhost:8080`.
 
+## Clonando o Projeto
+
+Para obter o código-fonte do projeto, você precisa clonar o repositório. Abra o terminal e execute o seguinte comando:
+
+```
+git clone https://github.com/hamiltonoliveira/PesquisaSatistacao.git
+```
+
+Isso baixará todo o código-fonte do projeto para o seu ambiente de desenvolvimento.
+
 ## Conclusão
 
 Este README forneceu uma visão geral do projeto Pesquisa de Satisfação, incluindo a versão do .NET utilizada, a arquitetura em camadas DDD, o processo de criação do banco de dados, os recursos de autenticação e refresh token, o limite diário de enquetes e a disponibilidade do backend em contêineres Docker gerenciados pelo Docker Compose. Sinta-se à vontade para explorar o projeto e contribuir para seu desenvolvimento contínuo.
